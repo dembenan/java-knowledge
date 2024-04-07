@@ -1,4 +1,4 @@
-package com.sidem;
+package com.sidem.models;
 
 public class User {
     private String name;
@@ -20,8 +20,5 @@ public class User {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Le user "+this.name +" a " + this.age +" ans";
-    }
+
 }
