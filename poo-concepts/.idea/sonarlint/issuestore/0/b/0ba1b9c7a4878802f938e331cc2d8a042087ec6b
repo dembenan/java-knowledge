@@ -1,0 +1,8 @@
+
+r	java:S106	"+Replace this use of System.out by a logger.(‚ŞÏ¥ıÿÿÿÿ8ÑÎéÅê1J$bf88155d-b292-4c24-b76e-990bf17ca626
+r	java:S106"+Replace this use of System.out by a logger.(–ÑºÜùÿÿÿÿ8ÒÎéÅê1J$c80af952-5e43-4631-b7d9-a1a1577ddc5c
+l	java:S106"+Replace this use of System.out by a logger.(¹ÕÓ!8¢ÄêÅê1J$0edd01ee-e673-4494-b21f-7b42b1bb87b9
+[
+java:S1128">Remove this unused import 'com.sun.org.slf4j.internal.Logger'.(¢¤ÿ…8¤ƒôê1
+b
+java:S1128"ERemove this unused import 'com.sun.org.slf4j.internal.LoggerFactory'.(ÊÆ‹8¤ƒôê1
