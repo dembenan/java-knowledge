@@ -292,6 +292,96 @@ Les méthodes de portée private ne supportent pas le polymorphisme. En effet, u
 
 5. **Abstraction**
 
+L'abstraction est l’un des concepts clés dans les langages de programmation orientée objet (POO). Son objectif principal est de gérer la complexité en masquant les détails inutiles à l’utilisateur. Cela permet à l’utilisateur d’implémenter une logique plus complexe sans comprendre ni même penser à toute la complexité cachée.
+
+
+
+Exemple d’abstraction en Java
+Pour donner un exemple d’abstraction, nous allons créer une super-classe appelée « Forme » et deux sous-classes – « Rectangle » et « Cercle ». Les deux sous-classes ont des propriétés communes à partager, comme la couleur. Il existe une différence majeure entre le rectangle et le cercle à savoir: la surface, la largeur, la taille et le rayon …
+
+      package com.sidem;
+
+      abstract class Forme {
+            String coleur;
+            // Méthodes abstraites
+            abstract double surface();
+            public abstract String toString();
+            
+             // Classe abstraite peut avoir un constructeur
+             public Forme(String coleur) {
+                 System.out.println("Constructeur de la classe Forme est appelé");
+                 this.coleur = coleur;
+             }
+             // Méthode concrète
+             public String getColeur() {
+                 return coleur;
+             }
+      }
+
+      class Cercle extends Forme {
+            double rayon;
+
+             public Cercle(String coleur, double rayon) {
+         
+                 // appel du constructeur de la classe Forme
+                 super(coleur);
+                 System.out.println("Constructeur de la classe Cercle est appelé");
+                 this.rayon = rayon;
+             }
+
+             @Override
+             double surface() {
+                 return Math.PI * Math.pow(rayon, 2);
+             }
+
+             @Override
+             public String toString() {
+                 return "La couleur de la cercle est " + super.coleur +
+                         " et la surface est : " + surface();
+             }
+
+      }
+
+      class Rectangle extends Forme{
+
+       double longueur;
+       double largeur;
+   
+       public Rectangle(String coleur, double longueur, double largeur) {
+              // appel du constructeur de la classe Forme
+              super(coleur);
+              System.out.println("Constructeur de la classe Rectangle est appelé");
+              this.longueur = longueur;
+              this.largeur = largeur;
+            }
+
+          @Override
+          double surface() {
+              return longueur * largeur;
+          }
+
+          @Override
+          public String toString() {
+              return "La couleur de la rectangle est " + super.coleur +
+                      " et la surface est : " + surface();
+          }
+      }
+         public class Abstraction {
+            public static void main(String[] args)
+            {
+               Forme f1 = new Cercle("Bleu", 3.2);
+               Forme f2 = new Rectangle("Rouge", 3, 6);
+      
+              System.out.println(f1.toString());
+              System.out.println(f2.toString());
+             }
+      }
+
+
+
+
+6. fin POO
+
 
 
 
