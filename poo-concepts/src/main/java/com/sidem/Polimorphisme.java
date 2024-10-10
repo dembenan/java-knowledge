@@ -1,4 +1,5 @@
 package com.sidem;
+
 class Animal {
     public void crier() {
         System.out.println("un cri d'animal");

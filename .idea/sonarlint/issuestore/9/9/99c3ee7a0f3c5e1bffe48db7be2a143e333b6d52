@@ -1,0 +1,9 @@
+
+
+java:S5993
+"9Change the visibility of this constructor to "protected".(ÂåÚùÿÿÿÿ8®×ë1J$e7762735-337f-46fc-8b34-1717519d36f8
+r	java:S106"+Replace this use of System.out by a logger.(ğ«ã¸úÿÿÿÿ8ÊŞÅÑë1J$1ac86689-4d22-49d1-9536-0fe25beba645
+m	java:S106"+Replace this use of System.out by a logger.(Áßè•8ÊŞÅÑë1J$52d9ddb8-bd03-466a-b5b2-63363ea1f65a
+m	java:S1064"+Replace this use of System.out by a logger.(ÿ¥“8”®×ë1J$be77b027-e9cc-4e0d-b1c1-222e59da7277
+r	java:S106K"+Replace this use of System.out by a logger.(èŒ¶ûÿÿÿÿ8•®×ë1J$c960e41c-1212-45d9-b8c1-5384adae5a62
+m	java:S106L"+Replace this use of System.out by a logger.(øÃ¥ú8•®×ë1J$1b629ad5-5080-4ecf-b045-f5bfde4a2b3d

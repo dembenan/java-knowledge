@@ -1,0 +1,24 @@
+
+Nous définissons le "super chiffre" d'un entier en utilisant les règles suivantes :
+ Si 𝑛 n n'a qu'un seul chiffre, alors son super chiffre est 𝑛 n.
+ Sinon, le super chiffre de 𝑛 n est égal au super chiffre de la somme des chiffres de 𝑛 n.
+ Ici, la somme des chiffres d'un nombre est définie comme la somme de ses chiffres.
+ Par exemple, le super chiffre de 9875 9875 sera calculé comme suit :
+  super_chiffre(9875) = super_chiffre(9+8+7+5)
+   = super_chiffre(29)
+   = super_chiffre(2+9)
+   = super_chiffre(11)
+   = super_chiffre(1+1)
+   = super_chiffre(2) = 2.
+
+ On vous donne deux nombres 𝑛 et 𝑘.
+ Vous devez calculer le super chiffre de 𝑝 .
+ 𝑝 est créé lorsque le nombre 𝑛  est concaténé 𝑘 fois.
+ C'est-à-dire, si 𝑛 = 9875 et 𝑘 = 4,
+ alors 𝑝 = 9875987598759875.
+
+ Format d'entrée La première ligne contient deux entiers séparés par un espace, 𝑛 et 𝑘.
+
+  Contraintes
+
+  Format de sortie Affichez le super chiffre de 𝑝 p, où 𝑝 p est créé comme décrit ci-dessus.
